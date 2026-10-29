@@ -13,12 +13,12 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     /**
-     * The current password being used by the factory.
+     * Password default yang digunakan untuk fake user saat testing/seeding.
      */
     protected static ?string $password;
 
     /**
-     * Define the model's default state.
+     * Mendefinisikan data default untuk model User.
      *
      * @return array<string, mixed>
      */
@@ -26,15 +26,20 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
+            // Menambahkan fake username unik untuk testing
+            'username' => fake()->unique()->userName(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
+            'avatar' => null,
+            'bio' => fake()->paragraph(),
+            'role' => 'member',
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
         ];
     }
 
     /**
-     * Indicate that the model's email address should be unverified.
+     * State untuk membuat user yang belum verifikasi email.
      */
     public function unverified(): static
     {
