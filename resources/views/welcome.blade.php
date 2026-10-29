@@ -130,48 +130,48 @@
                     <span class="text-xs text-slate-400">Filter by Language & Sub-Genre</span>
                 </div>
 
-                {{-- Pixel Panel Sub-Genre Cards --}}
+                {{-- Pixel Panel Sub-Genre Cards with Floating Animation --}}
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     
                     {{-- Genre 1: Epic Fantasy --}}
-                    <div class="panel-pixel p-4 text-center hover:border-amber-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🏰</div>
+                    <div class="panel-pixel p-4 text-center hover:border-amber-400 hover:shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all group animate-card-float card-delay-1 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">🏰</div>
                         <h3 class="text-xs font-bold text-amber-200">Epic Fantasy</h3>
-                        <p class="text-[10px] text-slate-400 mt-1">Kingdoms & Ancient Lore</p>
+                        <p class="text-[10px] text-slate-400 mt-1">Kingdoms & Lore</p>
                     </div>
 
                     {{-- Genre 2: Dark Fantasy --}}
-                    <div class="panel-pixel p-4 text-center hover:border-purple-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">💀</div>
+                    <div class="panel-pixel p-4 text-center hover:border-purple-400 hover:shadow-[0_0_15px_rgba(192,132,252,0.4)] transition-all group animate-card-float card-delay-2 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">💀</div>
                         <h3 class="text-xs font-bold text-purple-200">Dark Fantasy</h3>
-                        <p class="text-[10px] text-slate-400 mt-1">Grim Realms & Horrors</p>
+                        <p class="text-[10px] text-slate-400 mt-1">Grim Realms</p>
                     </div>
 
                     {{-- Genre 3: Isekai / Portal --}}
-                    <div class="panel-pixel p-4 text-center hover:border-sky-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🌀</div>
+                    <div class="panel-pixel p-4 text-center hover:border-sky-400 hover:shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-all group animate-card-float card-delay-3 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">🌀</div>
                         <h3 class="text-xs font-bold text-sky-200">Isekai / Portal</h3>
                         <p class="text-[10px] text-slate-400 mt-1">Otherworldly Rebirth</p>
                     </div>
 
                     {{-- Genre 4: Magic Academy --}}
-                    <div class="panel-pixel p-4 text-center hover:border-amber-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🔮</div>
+                    <div class="panel-pixel p-4 text-center hover:border-amber-400 hover:shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all group animate-card-float card-delay-4 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">🔮</div>
                         <h3 class="text-xs font-bold text-amber-200">Magic Academy</h3>
-                        <p class="text-[10px] text-slate-400 mt-1">Spellcraft & Scholars</p>
+                        <p class="text-[10px] text-slate-400 mt-1">Spellcraft & Lore</p>
                     </div>
 
                     {{-- Genre 5: Urban Fantasy --}}
-                    <div class="panel-pixel p-4 text-center hover:border-purple-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🏙️</div>
+                    <div class="panel-pixel p-4 text-center hover:border-purple-400 hover:shadow-[0_0_15px_rgba(192,132,252,0.4)] transition-all group animate-card-float card-delay-5 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">🏙️</div>
                         <h3 class="text-xs font-bold text-purple-200">Urban Fantasy</h3>
-                        <p class="text-[10px] text-slate-400 mt-1">Modern Era Sorcery</p>
+                        <p class="text-[10px] text-slate-400 mt-1">Modern Sorcery</p>
                     </div>
 
                     {{-- Genre 6: Romance Fantasy --}}
-                    <div class="panel-pixel p-4 text-center hover:border-sky-400 transition-colors group">
-                        <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">✨</div>
-                        <h3 class="text-xs font-bold text-sky-200">Romance Fantasy</h3>
+                    <div class="panel-pixel p-4 text-center hover:border-pink-400 hover:shadow-[0_0_15px_rgba(244,114,182,0.4)] transition-all group animate-card-float card-delay-6 cursor-pointer">
+                        <div class="text-2xl mb-2 group-hover:scale-125 transition-transform">✨</div>
+                        <h3 class="text-xs font-bold text-pink-200">Romance Fantasy</h3>
                         <p class="text-[10px] text-slate-400 mt-1">Enchanted Hearts</p>
                     </div>
 

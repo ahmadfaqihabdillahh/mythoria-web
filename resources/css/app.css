@@ -5,7 +5,7 @@
 /* ==========================================================================
    MYTHORIA THEME: DARK FANTASY & CELESTIAL PIXEL RPG
    This file manages color palettes, astral backgrounds, shooting star effects,
-   floating headline animations, and retro Minecraft-style pixel buttons.
+   floating headline animations, levitating genre cards, and retro pixel buttons.
    ========================================================================== */
 
 @layer base {
@@ -128,7 +128,7 @@
 
     /* =========================================================================
        SHOOTING STARS (METEOR SHOWER / BINTANG JATUH SERING)
-       ========================================================================= */
+       ========================================================================= --*/
     .shooting-star-container {
         position: fixed;
         inset: 0;
@@ -177,7 +177,7 @@
 
     /* =========================================================================
        HEADLINE ANIMATIONS (ASTRAL SHIMMER & CELESTIAL FLOAT)
-       ========================================================================= */
+       ========================================================================= --*/
     @keyframes celestialFloat {
         0%, 100% {
             transform: translateY(0px);
@@ -212,4 +212,35 @@
         display: inline-block;
         animation: astralShimmer 5s ease infinite, celestialFloat 3.8s ease-in-out infinite;
     }
+
+    /* =========================================================================
+       GENRE CARDS LEVITATION & PULSE ANIMATION
+       Efek kartu terapung bergelombang (seperti artefak sihir / tablet melayang)
+       ========================================================================= --*/
+    @keyframes cardLevitate {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-7px);
+        }
+    }
+
+    .animate-card-float {
+        animation: cardLevitate 4s ease-in-out infinite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .animate-card-float:hover {
+        animation-play-state: paused; /* Berhenti melayang saat kursor berada di atas kartu */
+        transform: translateY(-10px) scale(1.03); /* Sedikit terangkat & membesar saat di-hover */
+    }
+
+    /* Variasi jeda (delay) agar kartu bergerak bergelombang bergantian */
+    .card-delay-1 { animation-delay: 0s; }
+    .card-delay-2 { animation-delay: 0.6s; }
+    .card-delay-3 { animation-delay: 1.2s; }
+    .card-delay-4 { animation-delay: 1.8s; }
+    .card-delay-5 { animation-delay: 2.4s; }
+    .card-delay-6 { animation-delay: 3.0s; }
 }
